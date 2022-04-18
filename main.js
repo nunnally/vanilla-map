@@ -18743,28 +18743,7 @@ data = [
       "valor": -1,
       "servidores": -1
     },
-    {
-      "cod_campo": 2,
-      "campo": "Sau",
-      "cod_tipo": 2,
-      "tipo": "Urbana",
-      "cod_categoria": 2,
-      "categoria": "Publica",
-      "cod_depen": 1,
-      "depen": "Estadual",
-      "reg": "CO",
-      "UF": "DF",
-      "municipio": "Brasilia",
-      "latitude": -15.8196172,
-      "longitude": -47.9231456,
-      "nome": "CENTRO DE ENSINO FUNDAMENTAL POLIVALENTE",
-      "ideb_2019": -1,
-      "ideb_2019_Seriais": -1,
-      "nivel_servico": -1,
-      "custos": -1,
-      "valor": -1,
-      "servidores": -1
-    },
+
     {
       "cod_campo": 2,
       "campo": "Sau",
