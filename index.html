@@ -27,12 +27,13 @@
 
           <div class="flex-1 flex flex-col overflow-y-auto">
             <nav class="flex-1 px-2 py-4 bg-gray-800 space-y-1">
-                <fieldset>
-                    <legend class="text-lg font-medium text-white">Tipo</legend>
+                <fieldset style="display:none">
+                    <legend class="text-lg font-medium text-white">Estado</legend>
                     <div class="mt-4 border-t border-b border-gray-200 divide-y divide-gray-200">
+                      </div>
                       <div class="relative flex items-start py-4">
                         <div class="min-w-0 flex-1 text-sm">
-                          <label for="escola" class="font-medium text-white select-none">Educação</label>
+                          <label for="escola" class="font-medium text-white select-none">Acre</label>
                         </div>
                         <div class="ml-3 flex items-center h-5">
                           <input id="escolas_input" name="escola" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
@@ -41,7 +42,7 @@
                   
                       <div class="relative flex items-start py-4">
                         <div class="min-w-0 flex-1 text-sm">
-                          <label for="person-2" class="font-medium text-white select-none">Saúde</label>
+                          <label for="person-2" class="font-medium text-white select-none">Amapá</label>
                         </div>
                         <div class="ml-3 flex items-center h-5">
                           <input id="saude_input" name="person-2" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
@@ -52,7 +53,55 @@
 
                   <br>
 
+                  <fieldset id="caracateristicas">
+                    <legend class="text-lg font-medium text-white">Características</legend>
+                    <div class="mt-4 border-t border-b border-gray-200 divide-y divide-gray-200">
+                      </div>
+                      <div class="relative flex items-start py-4">
+                        <div class="min-w-0 flex-1 text-sm">
+                          <label for="escola" class="font-medium text-white select-none">Assentamento</label>
+                        </div>
+                        <div class="ml-3 flex items-center h-5">
+                          <input value='1' type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                        </div>
+                      </div>
+                  
+                      <div class="relative flex items-start py-4">
+                        <div class="min-w-0 flex-1 text-sm">
+                          <label for="escola" class="font-medium text-white select-none">Indigena</label>
+                        </div>
+                        <div class="ml-3 flex items-center h-5">
+                          <input value='2' type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                        </div>
+                      </div>
 
+                      <div class="relative flex items-start py-4">
+                        <div class="min-w-0 flex-1 text-sm">
+                          <label for="escola" class="font-medium text-white select-none">Quilombo</label>
+                        </div>
+                        <div class="ml-3 flex items-center h-5">
+                          <input value='3' type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                        </div>
+                      </div>
+
+                      <div class="relative flex items-start py-4">
+                        <div class="min-w-0 flex-1 text-sm">
+                          <label for="escola" class="font-medium text-white select-none">Nenhuma</label>
+                        </div>
+                        <div class="ml-3 flex items-center h-5">
+                          <input value='4' type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                        </div>
+                      </div>
+
+                      <div class="relative flex items-start py-4">
+                        <div class="min-w-0 flex-1 text-sm">
+                          <label for="escola" class="font-medium text-white select-none">Sem Informação</label>
+                        </div>
+                        <div class="ml-3 flex items-center h-5">
+                          <input value='5' type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                        </div>
+                      </div>
+                  </fieldset>
 
             </nav>
           </div>
@@ -65,41 +114,7 @@
       <main class="flex-1 relative overflow-y-auto focus:outline-none">
         <div class="">
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div>
 
-    <dl class="grid grid-cols-1 rounded-lg bg-white overflow-hidden shadow divide-y divide-gray-200 md:grid-cols-2 md:divide-y-0 md:divide-x">
-      <div class="px-4 py-5 sm:p-6">
-        <dt class="text-base font-normal text-gray-900">
-          Escolas
-        </dt>
-        <dd class="mt-1 flex justify-between items-baseline md:block lg:flex">
-          <div class="flex items-baseline text-2xl font-semibold text-indigo-600">
-            2140
-            <span class="ml-2 text-sm font-medium text-gray-500">
-              de 2140
-            </span>
-          </div>
-
-        </dd>
-      </div>
-      
-  
-      <div class="px-4 py-5 sm:p-6">
-        <dt class="text-base font-normal text-gray-900">
-          Pontos de Saúde
-        </dt>
-        <dd class="mt-1 flex justify-between items-baseline md:block lg:flex">
-          <div class="flex items-baseline text-2xl font-semibold text-indigo-600">
-            1371
-            <span class="ml-2 text-sm font-medium text-gray-500">
-              de 1371
-            </span>
-          </div>
-
-        </dd>
-      </div>
-    </dl>
-  </div>
                 <div id="map" class="border-2 border border-gray-100 rounded-lg h-96"></div>
 
 
