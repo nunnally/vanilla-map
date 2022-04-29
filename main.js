@@ -19382,9 +19382,9 @@ const plotMarks = (results) =>{
         });
         marker.bindPopup(`
         <b>${result.escola}</b><br><br>
-        <b>2019_ideb_1_5:</b>${result['2019_ideb_1_5']}<br>
-        <b>2019_ideb_6_9:</b>${result['2019_ideb_6_9']}<br>
-        <b>2019_ideb_em:</b>${result['2019_ideb_em']}<br>
+        <b>2019_ideb_1_5:</b> ${result['2019_ideb_1_5']}<br>
+        <b>2019_ideb_6_9:</b> ${result['2019_ideb_6_9']}<br>
+        <b>2019_ideb_em:</b> ${result['2019_ideb_em']}<br>
         `)
         clusters.addLayer(marker);
     });
