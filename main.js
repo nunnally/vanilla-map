@@ -22899,7 +22899,7 @@ let markers = new L.FeatureGroup(); // Layer is created here
 let latitude = data.reduce((sum, current) => sum + current.latitude, 0)/data.length;
 let longitude = data.reduce((sum, current) => sum + current.longitude, 0)/data.length;
 
-map.setView([latitude, longitude], 13);
+map.setView([latitude, longitude], 10);
 
 const handleMap = (results) => {
     autoMapPosition(results);
@@ -22942,7 +22942,7 @@ const renderFiltersBox = (marks) => {
     let latitude = marks.reduce((sum, current) => sum + current.latitude, 0)/marks.length;
     let longitude = marks.reduce((sum, current) => sum + current.longitude, 0)/marks.length;
 
-    map.setView([latitude, longitude], 12);
+    map.setView([latitude, longitude], 10);
 }
 
 const queryData = () => {
@@ -22964,7 +22964,7 @@ const autoMapPosition = (marks) => {
     let latitude = marks.reduce((sum, current) => sum + current.latitude, 0)/marks.length;
     let longitude = marks.reduce((sum, current) => sum + current.longitude, 0)/marks.length;
 
-    map.setView([latitude, longitude], 5);
+    map.setView([latitude, longitude], 9);
 }
 
 
